@@ -1,0 +1,21 @@
+---
+kind: pipeline
+name: php7.3-alpine3.9
+
+steps:
+  - name: ansible-python2  
+    image: plugins/docker
+    settings:
+      repo: versioncontrol/docker-ansible
+      username:
+        from_secret: docker_hub_username
+      password:
+        from_secret: docker_hub_password
+      context: 2.8/alpine/3.10/
+      dockerfile: python2/alpine3.10/Dockerfile
+      tags:
+        - '2.8-python2-alpine3.10'
+        - '2.8-python2-alpine'
+        - '2.8-python2'
+        - '2.8-alpine'
+        - '2.8'
