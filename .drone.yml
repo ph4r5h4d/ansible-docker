@@ -11,7 +11,7 @@ steps:
         from_secret: docker_hub_username
       password:
         from_secret: docker_hub_password
-      context: 2.8/alpine/3.10/
+      context: python2/alpine3.10/
       dockerfile: python2/alpine3.10/Dockerfile
       tags:
         - '2.8-python2-alpine3.10'
