@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-name: php7.3-alpine3.9
+name: Ansible-Docker
 
 steps:
   - name: ansible-python2  
